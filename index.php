@@ -9,18 +9,20 @@
       <title>Table </title>
    </head>
    <body>
-      <table id="jsondata">
-         <tbody>
-            <th>FirstName</th>
-            <th>LastName </th>
-            <th>Email</th>
-            <th>Contact_No</th>
-            <th>Age</th>
-            <th>Adress</th>
-            <th>Company</th>
-            <th>Designation</th>
-         </tbody>
-      </table>
+   <table id="myTable">
+    <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+        <th>Contact_No</th>
+        <th>Age</th>
+        <th>Address</th>
+        <th>Company</th>
+        <th>Designation</th>
+    </tr>
+</table>
+
       <script src="script.js"></script>  
    </body>
 </html>
+
