@@ -1,35 +1,33 @@
 body{
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 table{
-    border-collapse: collapse;
-    width: 80%;
-    margin: auto;
-    margin-top:50px;
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  margin-top:50px;
 }
 table td, table th {
-    border: 1px solid #c7c4c3;
-    padding: 8px;
+  border: 1px solid #c7c4c3;
+  padding: 8px;
 }
 table tr{
-   background-color: #f3ebe0;
+ background-color: #f3ebe0;
 }
 table tr:hover {
-   background-color: #ddd4cf;
+ background-color: #ddd4cf;
 }
 table th {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: left;
-    background-color: #ed6b29;
-    color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: #ed6b29;
+  color: white;
 }
 
 @media screen and (max-width:500px){
-    table{
-     
-        overflow-x: scroll;
-    }
-    
+  table{
+    overflow-x: scroll;
+  }
 }
