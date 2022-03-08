@@ -1,15 +1,28 @@
-function toDo() {
+const table=document.getElementById("myTable");
+
+function toDo(values) {
 	const request = new XMLHttpRequest();
 	request.open("get", "information.json", true);
 	request.onload = () => {
 		const json = JSON.parse(request.responseText);
+		limit=values;
 		data(json);
+	
 	}
 	request.send();
 }
 
+
+
+
 function data(json) {
-	for (var i = 0; i < json.length; i++) {
+	var Tbl = document.getElementById('myTable');
+while(Tbl.childNodes.length>2)
+{
+	Tbl.removeChild(Tbl.lastChild);
+}
+
+	for (var i = 0; i < limit; i++) {
 		document.querySelector('#myTable').insertAdjacentHTML("beforeend", '<tr>' +
 			'<td>' + json[i].FirstName + '</td>' +
 			'<td>' + json[i].LastName + '</td>' +
@@ -22,7 +35,10 @@ function data(json) {
 			'</tr>'
 		);
 	}
+	
 }
+
 document.addEventListener("DOMContentLoaded", () => {
-	toDo();
+	toDo(5);
 });
+
